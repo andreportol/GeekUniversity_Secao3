@@ -55,8 +55,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'fusion.urls'
 CSRF_TRUSTED_ORIGINS = [
-    'https://andre.up.railway.app/',
     'https://www.andre.up.railway.app/',
+    'https://andre.up.railway.app/',
 ]
 TEMPLATES = [
     {
