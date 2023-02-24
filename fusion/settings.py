@@ -24,10 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'django-insecure-l$f9^dlfekykl-wpd!+re4ou5i9d*2f$07xpj3oi9p=cwu0+ku'
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://www.andre.up.railway.app/',
-    'https://andre.up.railway.app/',
-]
+
 
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
@@ -43,6 +40,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,6 +51,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheadears.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -61,6 +60,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://www.andre.up.railway.app/',
+    'https://andre.up.railway.app/',
 ]
 
 ROOT_URLCONF = 'fusion.urls'
