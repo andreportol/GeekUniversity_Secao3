@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -61,12 +61,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+'''
 CSRF_TRUSTED_ORIGINS = [
     'https://www.andre.up.railway.app/',
     'https://andre.up.railway.app/',
 ]
-
+'''
 ROOT_URLCONF = 'fusion.urls'
 
 TEMPLATES = [
