@@ -23,7 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = 'django-insecure-l$f9^dlfekykl-wpd!+re4ou5i9d*2f$07xpj3oi9p=cwu0+ku'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://www.andre.up.railway.app/',
+    'https://andre.up.railway.app/',
+]
+
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
+
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
@@ -54,10 +64,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'fusion.urls'
-CSRF_TRUSTED_ORIGINS = [
-    'https://www.andre.up.railway.app/',
-    'https://andre.up.railway.app/',
-]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
