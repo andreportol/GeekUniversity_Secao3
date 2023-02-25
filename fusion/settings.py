@@ -62,14 +62,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 #MIDDLEWARE_CLASSES = 'django.contrib.csrf.middleware.CsrfMiddleware'
-
+'''
 CSRF_TRUSTED_ORIGINS = [
     'https://www.andre.up.railway.app/',
     'https://andre.up.railway.app/',
     'http://www.andre.up.railway.app/',
     'http://andre.up.railway.app/',
 ]
-
+'''
 ROOT_URLCONF = 'fusion.urls'
 
 TEMPLATES = [
