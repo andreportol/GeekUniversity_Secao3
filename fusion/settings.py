@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-MIDDLEWARE_CLASSES = 'django.contrib.csrf.middleware.CsrfMiddleware'
+#MIDDLEWARE_CLASSES = 'django.contrib.csrf.middleware.CsrfMiddleware'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://www.andre.up.railway.app/',
